@@ -1,0 +1,21 @@
+.footer {
+  margin: 20px;
+}
+
+.footer__line {
+  border-bottom: 1px rgba(33,33,33,0.4) solid;
+  padding: auto;
+}
+
+.footer__copyright {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  padding: 60px;
+  margin: 0;
+  opacity: 70%;
+  display: flex;
+  justify-content: center;
+
+}
+
