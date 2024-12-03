@@ -2,12 +2,10 @@
   background-color: #FCF5E5;
   min-height: 100vh;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
-  font-weight: 500;
-  margin-bottom: 34px;
+  font-weight: 500
 }
 
 .page__section{
   max-width: 1280px;
   margin: auto;
-
 }

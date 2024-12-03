@@ -16,4 +16,6 @@ This project is made to share images so all elements are displayed correctly on 
   
 This webpage is deployed to Github Pages
 
--Deployment link: 
+-Deployment link: https://castledd.github.io/se_project_spots/
+
+-Video link: https://drive.google.com/file/d/1cDc6Qp0osKoLmKd0orN6judoJz0KRw4f/view?usp=sharing

@@ -1,7 +1,6 @@
 .profile {
   display: flex;
   margin: auto;
-
   border-bottom: 1px rgba(33,33,33,0.4) solid;
 }
 
@@ -38,6 +37,7 @@
   margin-right: 20px;
   margin-bottom: 20px;
   border-radius: 8px;
+  object-fit: cover;
 }
 
 .profile__column {
@@ -53,11 +53,18 @@
   background-color: #FCF5E5;
   opacity: 70%;
   align-items: center;
+  padding: 0;
+  cursor: pointer;
+}
+
+.profile__edit-btn:hover {
+  padding: 5px;
 }
 
 .profile__pencil {
   margin-right: 8px;
 }
+
 
 .profile__add-button {
   width: 149px;
@@ -71,6 +78,11 @@
   align-self: flex-end;
   margin-bottom: 20px;
   align-items: center;
+  cursor: pointer;
+}
+
+.profile__add-button:hover {
+  opacity: 80%;
 }
 
 .profile__plus {
@@ -115,3 +127,4 @@
   max-width: 100px;
   }
 }
+

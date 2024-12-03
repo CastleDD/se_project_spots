@@ -9,6 +9,7 @@
   border-radius: 8px;
   display: block;
   margin-bottom: 12px;
+  cursor: pointer;
 }
 
 .card__like-button {
@@ -18,12 +19,14 @@
   border: none;
   background-color: transparent;
   opacity: 40%;
+  cursor: pointer;
 }
 
 .card__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .card__info {
@@ -35,7 +38,12 @@
   white-space: nowrap;
   overflow: hidden;
   max-width: 350px;
+}
 
+@media screen and (max-width: 627px) {
+  .card__content {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 320px) {
