@@ -51,8 +51,10 @@ function getCardElement(data) {
   const cardNameElement = cardElement.querySelector(".card__info");
   const cardImageElement = cardElement.querySelector(".card__photo");
 
+
   cardNameElement.textContent = data.name;
   cardImageElement.src = data.link;
+  cardImageElement.alt = data.name;
 
 
 
@@ -83,6 +85,6 @@ editModalCloseBtn.addEventListener("click", closeModal);
 profileFormElement.addEventListener("submit", handleProfileFormSubmit);
 
 for (let i = 0; i < initialCards.length; i++) {
-const cardElement = getCardElement(initialCards[i]);
-cardsList.prepend(cardElement);
+  const cardElement = getCardElement(initialCards[i]);
+  cardsList.prepend(cardElement);
 }

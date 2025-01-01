@@ -36,10 +36,12 @@
   border: none;
   opacity: 40%;
   background-color: #fff;
+  cursor: pointer;
 }
 
 .modal__close-btn:hover {
   opacity: 100%;
+
 }
 
 
@@ -85,23 +87,29 @@
   background-color: #212121;
   color: #fcf5E5;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .modal__submit-btn:hover {
   opacity: 80%;
 }
 
-@media screen and (max-width: 627px) {
+@media screen and (max-width: 672px) {
 .modal {
   padding: 0 10px;
+
 }
 
 .modal__container {
-  padding: 12px;
+  padding: 12px 12px;
 }
 
 .modal__title {
   font-size: 20px;
+  height: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  width: 106px;
   margin: 10px 0 34px;
 }
 

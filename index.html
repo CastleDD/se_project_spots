@@ -19,7 +19,7 @@
       <section class="profile page__section">
         <img src="./images/avatar.jpg" alt="avatar image" class="profile__avatar"/>
         <div class="profile__column">
-          <h1 class="profile__title">Aliaune Damala Bouga Time Bongo Puru Nacka Lu Lu Lu Badara Akon</h1>
+          <h1 class="profile__title">Puru Nacka Lu Lu Lu</h1>
           <p class="profile__subtitle">Civil Aviator</p>
           <button type="button" class="profile__edit-btn">
             <img src="./images/pencil.svg" alt="pencil icon" class="profile__pencil"/>Edit Profile
@@ -46,35 +46,36 @@
       </ul>
     </section>
     </main>
-        <footer class="footer content page__section">
-          <p class="footer__copyright">2024 &copy; Spots</p>
-        </footer>
-        <div class="modal" id="edit-modal">
-          <div class="modal__container">
-            <button type="submit" class="modal__close-btn">
-            <img src="./images/X.svg" alt="X icon" class="modal__x"/>
-            </button>
-            <h2 class="modal__title">Edit profile</h2>
-            <form name="edit-profile" class="modal__form">
-              <label for="profile-name-input" class="modal__label">
-              Name
-              <input
-                id="profile-name-input"
-                type="text"
-                class="modal__input"
-                placeholder="Type your name">
-              <label for="profile-description-input" class="modal__label">
-                Description
-              <input
-                id="profile-description-input"
-                type="text"
-                class="modal__input"
-                placeholder="Describe yourself">
+      <footer class="footer content page__section">
+        <p class="footer__copyright">2024 &copy; Spots</p>
+      </footer>
+       <div class="modal" id="edit-modal">
+        <div class="modal__container">
+          <button type="button" class="modal__close-btn">
+          <img src="./images/X.svg" alt="X icon" class="modal__x"/>
+          </button>
+          <h2 class="modal__title">Edit profile</h2>
+          <form name="edit-profile" class="modal__form">
+            <label for="profile-name-input" class="modal__label">
+             Name
+             <input
+              id="profile-name-input"
+              type="text"
+              class="modal__input"
+              placeholder="Type your name">
               </label>
-              <button type="submit" class="modal__submit-btn">Save</button>
-            </form>
-          </div>
-        </div>
+            <label for="profile-description-input" class="modal__label">
+              Description
+            <input
+              id="profile-description-input"
+              type="text"
+              class="modal__input"
+              placeholder="Describe yourself">
+            </label>
+          <button type="submit" class="modal__submit-btn">Save</button>
+        </form>
+      </div>
+    </div>
   </div>
   <script defer src="./scripts/index.js"></script>
 </body>
