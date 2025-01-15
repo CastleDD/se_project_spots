@@ -1,5 +1,10 @@
 .card {
   max-width: 413px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+
 }
 
 .card__photo {
@@ -10,6 +15,32 @@
   display: block;
   margin-bottom: 12px;
   cursor: pointer;
+}
+
+.card__garbage_icon {
+  height: 15px;
+  width: 12px;
+  margin-top: 9px;
+  margin-bottom: 8px;
+
+}
+
+.card__delete-button {
+  background-image: url(../images/grey\ circle.svg);
+  background-color: transparent;
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  padding: 0;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.card__delete-button:hover {
+  background-image: url(../images/red\ circle.svg);
+
 }
 
 .card__like-button {
@@ -24,6 +55,15 @@
 
 .card__like-button:hover {
   opacity: 1;
+}
+
+.card__like-button_liked {
+background-image: url(../images/Liked.svg);
+opacity: 1;
+}
+
+.card__like-button_liked:hover {
+background-image: url(../images/likeHover.svg);
 }
 
 .card__content {
