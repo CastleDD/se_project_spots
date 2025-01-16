@@ -117,11 +117,12 @@ function handleProfileFormSubmit(evt) {
 }
 
 function handleAddCardSubmit(evt) {
-evt.preventDefault();
-const inputValues = {name: addModalCaptionInput.value, link: addModalLinkInput.value };
-const cardElement = getCardElement(inputValues);
-cardsList.prepend(cardElement);
-closeModal(addModal);
+  evt.preventDefault();
+  const inputValues = {name: addModalCaptionInput.value, link: addModalLinkInput.value };
+  const cardElement = getCardElement(inputValues);
+  cardsList.prepend(cardElement);
+  evt.target.reset();
+  closeModal(addModal);
 };
 
 
@@ -146,11 +147,11 @@ addModalCloseBtn.addEventListener("click", () => {
 });
 
 previewModalCloseBtn.addEventListener("click", () => {
-closeModal(previewModal);
+  closeModal(previewModal);
 });
 
 profileFormElement.addEventListener("submit", handleProfileFormSubmit);
-cardForm.addEventListener("submit", handleAddCardSubmit);
+  cardForm.addEventListener("submit", handleAddCardSubmit);
 
 initialCards.forEach((item) => {
   const cardElement = getCardElement(item);

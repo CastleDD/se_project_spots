@@ -11,9 +11,7 @@
   justify-content: center;
   visibility: hidden;
   padding: 0 20px;
-  transition: 0.5s, opacity 0.5s ease-in;
-
-  //*transition is not working properly please help*//
+  transition: visibility 0.3s, opacity 0.3s ease-in;
 }
 
 .modal_opened {
@@ -141,7 +139,7 @@
 }
 
 .modal__container {
-  padding: 0px 0px;
+  padding: 16px 16px;
 }
 
 
@@ -176,4 +174,15 @@
 .modal__submit-btn {
   width: 100%;
 }
+}
+
+@media screen and (max-width: 320px) {
+  .modal__image {
+    max-width: 288px;
+  }
+
+  .modal__container {
+    padding: 12px 12px;
+  }
+
 }

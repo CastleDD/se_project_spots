@@ -51,6 +51,8 @@
   background-color: transparent;
   cursor: pointer;
   opacity: 0.4;
+  background-repeat: no-repeat;
+  padding: 0;
 }
 
 .card__like-button:hover {
@@ -58,7 +60,7 @@
 }
 
 .card__like-button_liked {
-background-image: url(../images/Liked.svg);
+background-image: url(../images/redHeart.svg);
 opacity: 1;
 }
 
