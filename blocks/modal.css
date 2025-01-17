@@ -12,6 +12,7 @@
   visibility: hidden;
   padding: 0 20px;
   transition: visibility 0.3s, opacity 0.3s ease-in;
+  opacity: 0;
 }
 
 .modal_opened {
@@ -178,11 +179,11 @@
 
 @media screen and (max-width: 320px) {
   .modal__image {
-    max-width: 288px;
+    max-width: 413px;
   }
 
   .modal__container {
-    padding: 12px 12px;
+    padding: 5px;
   }
 
 }
