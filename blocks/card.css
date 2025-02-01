@@ -95,11 +95,14 @@ background-image: url(../images/likeHover.svg);
   .card__photo {
     height: 288px;
     width: 288px;
+
   }
 
   .card__info {
     max-width: 250px;
     font-size: 16px;
   }
+
+
 }
 
