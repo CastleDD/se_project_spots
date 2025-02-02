@@ -33,7 +33,6 @@ const profileName = document.querySelector(".profile__title");
 
 const profileDescription = document.querySelector(".profile__subtitle");
 
-const modals = document.querySelector(".modal");
 
 const editModal = document.querySelector("#edit-modal");
 
@@ -104,12 +103,13 @@ function getCardElement(data) {
 function openModal(modal) {
    modal.classList.add("modal_opened");
    document.addEventListener("keydown", closeModalEsc);
-   modal.addEventListener("click", ModalCloseByOverlay);
+   modal.addEventListener("click", handleOverlay);
 };
 
 function closeModal(modal) {
   modal.classList.remove("modal_opened");
   document.removeEventListener("keydown", closeModalEsc);
+  modal.removeEventListener("click", handleOverlay);
 };
 
 function closeModalEsc(evt) {
@@ -119,7 +119,7 @@ function closeModalEsc(evt) {
   };
 };
 
-function ModalCloseByOverlay(evt) {
+function handleOverlay(evt) {
   if (evt.target.classList.contains("modal")) {
     closeModal(evt.target);
   };
