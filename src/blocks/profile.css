@@ -1,7 +1,7 @@
 .profile {
   display: flex;
   margin: auto;
-  border-bottom: 1px rgba(33,33,33,0.4) solid;
+  border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
 }
 
 .profile__title {
@@ -22,7 +22,7 @@
   margin-top: 12px;
   font-size: 16px;
   opacity: 70%;
-  color:#212121
+  color: #212121;
   text-overflow: ellipsis;
   overflow: hidden;
   display: -webkit-box;
@@ -32,11 +32,34 @@
   max-height: 96px;
 }
 
+.profile__avatar-container {
+  position: relative;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.profile__avatar-btn {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.profile__avatar-container:hover .profile__avatar-btn {
+  visibility: visible;
+}
+
+.profile__avatar-btn::after {
+  content: "Edit Avatar";
+}
+
 .profile__avatar {
   height: 190px;
   width: 190px;
-  margin-right: 20px;
-  margin-bottom: 20px;
+
   border-radius: 8px;
   object-fit: cover;
 }
@@ -51,9 +74,9 @@
   margin-bottom: 20px;
   margin-right: auto;
   border: none;
-  background-color: #FCF5E5;
+  background-color: #fcf5e5;
   opacity: 70%;
-  color:#212121
+  color: #212121;
 
   padding: 0;
   cursor: pointer;
@@ -67,13 +90,12 @@
   margin-right: 8px;
 }
 
-
 .profile__add-button {
   width: 149px;
   height: 52px;
   background-color: #212121;
   border-radius: 8px;
-  color: #FCF5E5;
+  color: #fcf5e5;
   padding: 20px;
   margin-left: auto;
   display: flex;
@@ -93,7 +115,6 @@
   margin-right: 8px;
 }
 
-
 @media screen and (max-width: 627px) {
   .profile {
     flex-direction: column;
@@ -102,9 +123,18 @@
     text-align: center;
   }
 
+  .profile__avatar-btn {
+    visibility: visible;
+    margin-bottom: 12px;
+  }
+
+  .profile__avatar-btn::after {
+    content: "";
+  }
+
   .profile__avatar {
     margin-right: 0;
-    margin-bottom: 12px;
+
     height: 80px;
     width: 80px;
   }
@@ -126,8 +156,7 @@
   }
 
   .profile__subtitle {
-  margin: 6px 0 32px;
-  max-width: 100px;
+    margin: 6px 0 32px;
+    max-width: 100px;
   }
 }
-
