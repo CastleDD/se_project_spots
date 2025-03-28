@@ -46,6 +46,10 @@
   align-items: flex-end;
   justify-content: center;
   visibility: hidden;
+  /* opacity: 40%; */
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
 }
 
 .profile__avatar-container:hover .profile__avatar-btn {
@@ -54,6 +58,8 @@
 
 .profile__avatar-btn::after {
   content: "Edit Avatar";
+  color: #ffffff;
+  visibility: visible;
 }
 
 .profile__avatar {
