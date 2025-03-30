@@ -4,6 +4,7 @@ import {
   enableValidation,
   settings,
   resetValidation,
+  disableButton,
 } from "../scripts/validation.js";
 
 import Api from "../utils/Api.js";
@@ -259,7 +260,8 @@ function handleAddCardSubmit(evt) {
       const cardElement = getCardElement(data);
       cardsList.prepend(cardElement);
       evt.target.reset();
-      // disableButton(cardSubmitBtn, settings);
+      //
+      disableButton(cardSubmitBtn, settings);
       closeModal(addModal);
     })
     .catch(console.error)
@@ -280,6 +282,8 @@ function handleAvatarSubmit(evt) {
     .then((data) => {
       console.log(data.avatar);
       profileAvatar.src = avatarLinkInput.value;
+      //
+      closeModal(avatarModal);
     })
     .catch(console.error)
     .finally(() => {
